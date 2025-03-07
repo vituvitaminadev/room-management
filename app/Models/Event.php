@@ -5,17 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Guest extends Model
+class Event extends Model
 {
     use SoftDeletes;
 
-    protected $table = 'guests';
+    protected $table = 'events';
 
     protected $fillable = [
         'name',
-        'age',
-        'sex',
-        'room_id',
-        'event_id'
+        'description',
+        'start_date',
+        'end_date',
     ];
 }

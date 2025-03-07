@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('guests', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->integer('age');
+            $table->enum('sex', ['F', 'M']);
             $table->timestamps();
         });
     }
