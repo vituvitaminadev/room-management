@@ -18,6 +18,9 @@
                     <h1 class="mb-1 font-medium text-center">Manejo de quartos</h1>
 
                     <div class="flex mt-4 items-center justify-center w-full space-x-4">
+                        <a href="{{ url('/events/register') }}" class="bg-gray-400 hover:bg-gray-700 text-black py-2 px-4 rounded">
+                            Eventos
+                        </a>
                         <a href="{{ url('/guests/checkin') }}" class="bg-gray-400 hover:bg-gray-700 text-black py-2 px-4 rounded">
                             Check-IN
                         </a>

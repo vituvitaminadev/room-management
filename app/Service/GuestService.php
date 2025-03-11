@@ -6,7 +6,7 @@ use App\Models\Guest;
 
 class GuestService
 {
-    public function createGuest(array $data): Guest
+    public function create(array $data): Guest
     {
         return Guest::create($data);
     }

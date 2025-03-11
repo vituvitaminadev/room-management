@@ -18,7 +18,7 @@ class GuestController extends Controller
     public function create(CreateGuestRequest $request): JsonResponse
     {
         $data = $request->validated();
-        $guest = $this->guestService->createGuest($data);
+        $guest = $this->guestService->create($data);
 
         return response()->json($guest);
     }
